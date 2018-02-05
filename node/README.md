@@ -36,9 +36,13 @@ where APP_NAME should be replaced with what you would like to call your app
 
 
 
-#### Drill 2:
-- database, in progress
+### Drill 2:
+#### Part 1. Server:
+#### Part 2. Client:
+  - drill 1 with manifests
 
 
-#### Drill 3:
-  - tbd
+### Drill 3:
+  - database, in progress
+#### Part 1. Server:
+#### Part 2. Client:
