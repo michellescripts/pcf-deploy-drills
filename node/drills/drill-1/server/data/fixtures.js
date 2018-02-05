@@ -2,22 +2,22 @@
 module.exports = {
   steps: [{
     id: 1,
-    instructions: 'tbd'
+    instructions: 'Create a server'
   },
   {
     id: 2,
-    instructions: 'tbd'
+    instructions: 'Create a client that gets data from the server'
   },
   {
     id: 3,
-    instructions: 'tbd'
+    instructions: 'Deploy the server'
   },
   {
     id: 4,
-    instructions: 'tbd'
+    instructions: 'Update the client to speak to the deployed server'
   },
   {
     id: 5,
-    instructions: 'tbd'
+    instructions: 'Deploy the client'
   }
   ]}

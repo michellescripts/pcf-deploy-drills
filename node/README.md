@@ -17,6 +17,8 @@ follow [Installing the cf CLI ](https://docs.cloudfoundry.org/cf-cli/install-go-
 - in drill-1/server create a new file `.cfignore`
   - in .cfignore write node_modules
   - save
+
+  
 - in the terminal, **from the drill-1/server directory**,
 run `$ cf push APP_NAME -m 64MB -b nodejs_buildpack`,
 where APP_NAME should be replaced with what you would like to call your app
@@ -25,8 +27,10 @@ where APP_NAME should be replaced with what you would like to call your app
 
 
 #### Part 2. Client:
-- udpate drill-1/client/main.js
+- update drill-1/client/main.js
   - replace 'http://localhost:3000' with your deployed server URL in the fetch request
+
+
 - in the terminal, **from the drill-1/client directory**, run `cf push APP_NAME -m 64M -b staticfile_buildpack`, where APP_NAME should be replaced with what you would like to call your app
   - ex: `cf push node_drill1_client -m 64M -b staticfile_buildpack`
 
