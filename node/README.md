@@ -37,10 +37,44 @@ where APP_NAME should be replaced with what you would like to call your app
 
 
 ### Drill 2:
-#### Part 1. Server:
-#### Part 2. Client:
-  - drill 1 with manifests
 
+#### Part 1. Server:
+- in the **drill-2/server directory**, add a new file called `manifest.yml`
+  - in [manifest.yml](https://docs.run.pivotal.io/devguide/deploy-apps/manifest.html) add the following:
+  ```
+    ---
+    applications:
+    - name: node_drill2_server
+      memory: 64MB
+      instances: 1
+      buildpack: nodejs_buildpack
+  ```
+  - save
+
+
+- in the terminal, **from the drill-2/server directory**,
+run `$ cf push`
+  - make note of your deployed URL for part 2
+
+#### Part 2. Client:
+- in the **drill-2/client directory**, add a new file called `manifest.yml`
+  - in [manifest.yml](https://docs.run.pivotal.io/devguide/deploy-apps/manifest.html) add the following:
+  ```
+    ---
+    applications:
+    - name: node_drill2_client
+      memory: 64MB
+      instances: 1
+      buildpack: staticfile_buildpack
+  ```
+  - save
+
+
+- update drill-2/client/main.js
+  - replace 'http://localhost:3000' with your deployed server URL in the fetch request
+
+
+- in the terminal, **from the drill-2/client directory**, run `cf push`
 
 ### Drill 3:
   - database, in progress
