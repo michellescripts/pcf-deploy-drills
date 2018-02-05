@@ -15,7 +15,7 @@
 
 
 - node:
-  - drill 1: in progress
+  - drill 1: ready
   - drill 2: in progress
   - drill 3: in progress
 
